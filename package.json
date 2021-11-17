@@ -1,0 +1,24 @@
+{
+  "name": "klip-it",
+  "version": "0.0.1",
+  "description": "Online public clipboard for personal use",
+  "author": "Saheb Giri",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0-alpha.2",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^3.0.0-alpha.2",
+    "vite": "^2.6.4"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "firebase": "^9.4.1",
+    "jquery": "^3.6.0"
+  }
+}

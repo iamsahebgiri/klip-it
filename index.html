@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KlipIt</title>
+</head>
+
+<body>
+  <div id="app" class="bg-gray-100 min-h-screen">
+    <div class="max-w-xl mx-auto">
+      <div class="py-8">
+        <img src="./favicon.svg" alt="Klip it" class="h-16 w-16 mx-auto" />
+      </div>
+      <form>
+        <div class="shadow sm:rounded-md sm:overflow-hidden">
+          <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+            <div>
+              <label for="content" class="block text-sm font-medium text-gray-700">
+                Content
+              </label>
+              <div class="mt-1">
+                <textarea id="content" name="content" rows="4" class="
+                      shadow-sm
+                      focus:ring-blue-500 focus:border-blue-500
+                      mt-1
+                      block
+                      w-full
+                      sm:text-sm
+                      border border-gray-300
+                      rounded-md
+                    " placeholder="Paste anything that you want to share."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="
+                  inline-flex
+                  justify-center
+                  py-2
+                  px-4
+                  border border-transparent
+                  shadow-sm
+                  text-sm
+                  font-medium
+                  rounded-md
+                  text-white
+                  bg-blue-600
+                  hover:bg-blue-700
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-blue-500
+                ">
+              Create
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="py-12">
+        <div id="contents" class="space-y-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
