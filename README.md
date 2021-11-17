@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/iamsahebgiri/add-readme">
-    <img alt="KlipIt" height="80" src="https://raw.githubusercontent.com/iamsahebgiri/klip-it/favicon.svg">
+  <a href="https://raw.githubusercontent.com/iamsahebgiri/klip-it">
+    <img alt="KlipIt" height="80" src="https://raw.githubusercontent.com/iamsahebgiri/klip-it/main/favicon.svg">
   </a>
 </p>
 <h1 align="center">KlipIt</h1>
