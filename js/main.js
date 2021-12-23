@@ -32,7 +32,7 @@ function sanitize(string) {
     '>': '&gt;',
     '"': '&quot;',
     "'": '&#x27;',
-    "/": '&#x2F;',
+    "/": '/',
   };
   const reg = /[&<>"'/]/ig;
   return string.replace(reg, (match) => (map[match]));
@@ -86,8 +86,9 @@ $(async function () {
     snapshot.docChanges().forEach((change) => {
       if (change.type === "added") {
         const doc = change.doc.data();
+        console.log("Added: ", doc);
         $("#contents").prepend(`
-          <div data-id=${doc.id} class="bg-white p-6 shadow sm:rounded-md w-full">
+          <div data-id=${doc.id} class="bg-white p-6 shadow-sm sm:rounded-md w-full">
             <div>
               <p class="text-sm leading-5 text-slate-600 overflow-auto font-medium">
                 ${linkify(doc.content)}
