@@ -90,9 +90,9 @@ $(async function () {
         $("#contents").prepend(`
           <div data-id=${doc.id} class="bg-white p-6 shadow-sm sm:rounded-md w-full">
             <div>
-              <p class="text-sm leading-5 text-slate-600 overflow-auto font-medium">
-                ${linkify(doc.content)}
-              </p>
+              <div class="text-sm leading-5 text-slate-600 overflow-auto font-medium prose">
+                <pre>${linkify(doc.content)}</pre>
+              </div>
             <div class="flex items-center justify-between mt-3">
               <p class="text-sm leading-5 text-slate-500">${doc.createdAt === null ? "just now" : dayjs(doc.createdAt.toDate()).fromNow()}</p>
               <div>
