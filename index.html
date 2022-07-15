@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KlipIt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KlipIt</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <div id="app" class="bg-slate-100 min-h-screen font-mono">
-    <div class="max-w-2xl mx-auto">
-      <div class="py-8">
-        <img src="./favicon.svg" alt="Klip it" class="h-16 w-16 mx-auto" />
-      </div>
-      <form>
-        <div class="shadow-sm sm:rounded-md sm:overflow-hidden">
-          <div class="p-6 bg-white space-y-6">
-            <div>
-              <label for="content" class="block text-sm font-bold text-slate-700">
-                New Paste
-              </label>
-              <div class="mt-2">
-                <textarea id="content" name="content" class="
-                      h-32
-                      sm:h-48 
-                      shadow-sm
-                      focus:ring-blue-500 focus:border-blue-500
-                      mt-1
-                      block
-                      w-full
-                      sm:text-sm
-                      border border-slate-200
-                      rounded-md
-                    "></textarea>
+  <body>
+    <div id="app" class="bg-slate-100 min-h-screen font-mono">
+      <div class="max-w-2xl mx-auto">
+        <div class="py-8">
+          <img src="./favicon.svg" alt="Klip it" class="h-16 w-16 mx-auto" />
+        </div>
+        <form>
+          <div class="shadow-sm sm:rounded-md sm:overflow-hidden">
+            <div class="p-6 bg-white space-y-6">
+              <div>
+                <label
+                  for="content"
+                  class="block text-sm font-bold text-slate-700"
+                >
+                  New Paste
+                </label>
+                <div class="mt-2">
+                  <textarea
+                    id="content"
+                    name="content"
+                    class="h-32 sm:h-48 shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-slate-200 rounded-md"
+                  ></textarea>
+                </div>
               </div>
             </div>
+            <div class="bg-slate-50 text-right py-3 px-6">
+              <button
+                type="submit"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                Create a paste
+              </button>
+            </div>
           </div>
-          <div class="bg-slate-50 text-right py-3 px-6">
-            <button type="submit" class="
-                  inline-flex
-                  justify-center
-                  py-2
-                  px-4
-                  border border-transparent
-                  shadow-sm
-                  text-sm
-                  font-medium
-                  rounded-md
-                  text-white
-                  bg-blue-600
-                  hover:bg-blue-700
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-offset-2
-                  focus:ring-blue-500
-                ">
-              Create a paste
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
 
-      <div class="py-12">
-        <div id="contents" class="space-y-2">
+        <div class="py-12">
+          <div id="contents" class="space-y-2"></div>
+        </div>
+        <div class="text-center w-full pb-12">
+          Made with ❤️ by
+          <a
+            href="http://iamsahebgiri.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Saheb Giri</a
+          >
+        </div>
+
+        <div
+          id="toast"
+          class="bg-slate-800 fixed left-1/2 min-w-[240px] bottom-12 text-sm -translate-x-1/2 translate-y-0 rounded-md py-3 px-4 text-center text-white"
+        >
+          Copied successfully!
         </div>
       </div>
-      <div class="text-center w-full pb-12">
-        Made with ❤️ by <a href="http://iamsahebgiri.vercel.app" target="_blank" rel="noopener noreferrer">Saheb
-          Giri</a>
-      </div>
-
-      <div id="toast"
-        class="bg-slate-800 fixed left-1/2 min-w-[240px] bottom-12 text-sm -translate-x-1/2 translate-y-0 rounded-md py-3 px-4 text-center text-white">
-        Copied successfully!
-      </div>
-
     </div>
-  </div>
-  <script type="module" src="./js/main.js"></script>
-</body>
-
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
