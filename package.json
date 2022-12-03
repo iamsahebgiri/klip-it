@@ -4,6 +4,7 @@
   "description": "Online public clipboard for personal use",
   "author": "Saheb Giri",
   "scripts": {
+    "dev:css": "tailwindcss -i ./tailwind.css -o ./css/style.css --watch",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
