@@ -78,7 +78,7 @@ $(async function () {
           <div data-id=${id} class="bg-white p-6 shadow-sm sm:rounded-md w-full">
             <div>
               <div class="text-sm leading-5 text-slate-600 overflow-auto font-medium prose">
-                <pre>${linkify(sanitize(content)}</pre>
+                <pre>${linkify(sanitize(content))}</pre>
               </div>
             <div class="flex items-center justify-between mt-3">
               <p class="text-sm leading-5 text-slate-500">just now</p>
